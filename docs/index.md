@@ -20,7 +20,7 @@ Il a été conçu pour offrir un cadre clair, structuré et facilement accessibl
 - Servir de guide aux nouveaux utilisateurs des outils SIG.
 ### Autres sites:
 
-[🔗 Linked In](https://www.linkedin.com/company/agence-d-urbanisme-de-ch%C3%A2lons-en-champagne-audc/posts/)  
+[🔗 LinkedIn](https://www.linkedin.com/company/agence-d-urbanisme-de-ch%C3%A2lons-en-champagne-audc/posts/)  
 
 [🔗 Site officiel de l'AUDC51](https://www.audc51.org/)  
 
