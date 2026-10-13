@@ -1,5 +1,5 @@
 site_name: AUDC 51 - Plateforme de documentation 
-site_url: https://audcchalons51.github.io/methodes_travaux_audc51/#objectifs-du-site
+site_url: https://audcchalons51.github.io/methodes_travaux_audc51/
 site_description: Documentation technique en géomatique par AUDC 51 — PostGIS, GeoServer, QGIS, pgRouting, Python, télédétection, cartographie web.
 site_author: AUDC 51
 theme:
