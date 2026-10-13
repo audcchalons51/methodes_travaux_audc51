@@ -13,15 +13,16 @@ nav:
   - PostGIS 3D: postgis_3d_notes.md
   - pgRouting 1: pgrouting1.md
   - pgRouting 2: pgrouting2.md
-  - Manipulation de données avec commandes GDAL: GDAL_Ubuntu.md
   - Geoserver et diffusion de flux: GeoServer_QGIS_notes.md
   - Page web avec OpenLayers: openlayer_alwaysdata.md
   - Page web avec OpenLayers:ajout point: openlayer_alwaysdata_dessin.md
   - Automatisation de cartes thématiques sur QGIS: Methodologie_carto_diag_auto.md
+  - ETL QGIS interactif: etl/index.html
   - Mise en place Lizmap: lizmap.md
-  - Cartographie avec Rstudio: rstudio_geomatique.md
-  - Brique de Télédétection et Géomatqiue: teledetection.md
   - Automatiser l'execution de projet FME: automatisaion_fme.md
+  - Cartographie avec Rstudio: rstudio_geomatique.md
+  - Manipulation de données avec commandes GDAL: GDAL_Ubuntu.md
+  - Brique de Télédétection et Géomatqiue: teledetection.md
   - Consultation dynamique de données PostgreSQL avec PHP: consultation_dynamique_script_php.md
   - Classification non supervisée d'images: classification_image_kmeans.md
   - Classification supervisée d'images: teledetection_cpgeom.md
