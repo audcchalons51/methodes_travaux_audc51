@@ -1,4 +1,4 @@
-<h1 align="center">Bienvenue sur la documentation de l'AUDC 51</h1>
+<h1 align="center">Documentation technique et méthodologique de l’AUDC51</h1>
 
 <img width="1128" height="191" alt="agence_d_urbanisme_de_chlons_en_champagne_audc_cover" src="https://github.com/user-attachments/assets/caf61a4a-6e98-49f7-88a2-18da97dbc68f" />
 
