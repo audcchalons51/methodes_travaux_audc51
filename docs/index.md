@@ -6,8 +6,6 @@
   <img width="587" height="320" alt="Capture d'écran 2026-10-13 095648" src="https://github.com/user-attachments/assets/6f565214-ca3c-46df-b05f-fba1fa537718" />
 </p>
 
-<img width="1200" height="333" alt="logiciel-sig-qgis-arcgis-cartographie-geomatique-cartoexpert" src="https://github.com/user-attachments/assets/0dc750dc-c27c-45fd-87a3-da3f37b33c5a" />
-
 ---
 **AUDC51** – Agence d'Urbanisme et de développement de l'agglomération et du Pays de Châlons en Champagne 
 
@@ -42,7 +40,7 @@ Le site s’organise en différentes thématiques essentielles :
 
 - *D’autres rubriques seront ajoutées progressivement : Base de données, GDAL, télédétection, traitements Python, métadonnées, etc.*
 
-
+<img width="1200" height="333" alt="logiciel-sig-qgis-arcgis-cartographie-geomatique-cartoexpert" src="https://github.com/user-attachments/assets/0dc750dc-c27c-45fd-87a3-da3f37b33c5a" />
 
 
 
