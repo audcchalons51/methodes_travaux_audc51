@@ -11,8 +11,8 @@ nav:
   - Admin et Base de données géographique : aide_sql.md
   - Quelques exemples de scripts SQL fréquents en géomatique: abdou_julien_base_de_donnees.md
   - PostGIS 3D: postgis_3d_notes.md
-  - pgRouting 1: pgrouting1.md
-  - pgRouting 2: pgrouting2.md
+  - pgRouting 1: pgrouting1.mde
+  - pgRouting 2: pgrouting2.mde
   - Geoserver et diffusion de flux: GeoServer_QGIS_notes.md
   - Page web avec OpenLayers: openlayer_alwaysdata.md
   - Page web avec OpenLayers:ajout point: openlayer_alwaysdata_dessin.md
@@ -21,26 +21,26 @@ nav:
   - Mise en place Lizmap: lizmap.md
   - Automatiser l'execution de projet FME: automatisaion_fme.md
   - Cartographie avec Rstudio: rstudio_geomatique.md
-  - Manipulation de données avec commandes GDAL: GDAL_Ubuntu.md
+  - Manipulation de données avec commandes GDAL: GDAL_Ubuntu.mde
   - Brique de Télédétection et Géomatqiue: teledetection.md
-  - Consultation dynamique de données PostgreSQL avec PHP: consultation_dynamique_script_php.md
+  - Consultation dynamique de données PostgreSQL avec PHP: consultation_dynamique_script_php.mde
   - Classification non supervisée d'images: classification_image_kmeans.md
   - Classification supervisée d'images: teledetection_cpgeom.md
-  - Initiation en python 1: python1.md
-  - Initiation en python 2: python2.md
-  - Initiation en python 3: python3.md
-  - Initiation en python 4: python4.md
-  - Initiation en python 5: python5.md
-  - Initiation en python 6: python6.md
-  - Initiation en python 7: python7.md
-  - Initiation en python 8: python8.md
-  - Initiation en python 9: python9.md
-  - Initiation en python 10: python10.md
-  - Initiation en python 11: python11.md
-  - Initiation en python 12: python12.md
-  - Initiation en python 13: python13.md
-  - Initiation en python 14: python14.md
-  - Initiation en python 15: python15.md
+  - Initiation en python 1: python1.mde
+  - Initiation en python 2: python2.mde
+  - Initiation en python 3: python3.mde
+  - Initiation en python 4: python4.mde
+  - Initiation en python 5: python5.mde
+  - Initiation en python 6: python6.mde
+  - Initiation en python 7: python7.mde
+  - Initiation en python 8: python8.mde
+  - Initiation en python 9: python9.mde
+  - Initiation en python 10: python10.mde
+  - Initiation en python 11: python11.mde
+  - Initiation en python 12: python12.mde
+  - Initiation en python 13: python13.mde
+  - Initiation en python 14: python14.mde
+  - Initiation en python 15: python15.mde
   - Interopérabilité des données en géomatique: Interoperabilite.md
   - Exemple de source de données entreprise : Readme.md
   - Carte Pays de Châlons‑en‑Champagne: carte_web.html
