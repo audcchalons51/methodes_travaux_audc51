@@ -4,11 +4,8 @@
 
 **Année:** 2025-2027
 
-**Auteurs:**
-- GUENE Abdou Lahat
-- MASTROMATTEO Lucas
-- BARATEAU Cloé
-- GBETEY Antoine
+**Auteur:**
+- GUENE Abdou Lahat (Alternant géomaticien AUDC 2025 - 2027)
 
 <img width="2894" height="664" alt="logo-CPGEOM" src="https://github.com/user-attachments/assets/0c665be8-0b63-490f-8a1c-06b6ef74d991" />
 
