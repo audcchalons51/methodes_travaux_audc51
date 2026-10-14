@@ -1,6 +1,6 @@
 site_name: AUDC 51 - Plateforme de documentation
 site_url: https://audcchalons51.github.io/methodes_travaux_audc51/
-site_description: Documentation technique en géomatique de l'AUDC 51 - PostGIS, GeoServer, QGIS, pgRouting, Python, télédétection et cartographie web.
+site_description: "Documentation technique en géomatique de l'AUDC 51 - PostGIS, GeoServer, QGIS, pgRouting, Python, télédétection et cartographie web."
 site_author: AUDC 51
 
 theme:
@@ -10,44 +10,31 @@ theme:
   logo: assets/images/logo_audc.png
 
 nav:
-  - Accueil: index.md
-  - Mise en place d'une base de données géographique: etude_cas_bdd.md
-  - Administration d'une base de données géographique: aide_sql.md
-  - Exemples de scripts SQL fréquents en géomatique: abdou_julien_base_de_donnees.md
-  - PostGIS 3D: postgis_3d_notes.md
+  - "Accueil": index.md
+  - "Mise en place d'une base de données géographique": etude_cas_bdd.md
+  - "Administration d'une base de données géographique": aide_sql.md
+  - "Exemples de scripts SQL fréquents en géomatique": abdou_julien_base_de_donnees.md
+  - "PostGIS 3D": postgis_3d_notes.md
   # - pgRouting 1: pgrouting1.md
   # - pgRouting 2: pgrouting2.md
-  - GeoServer et diffusion de flux: GeoServer_QGIS_notes.md
-  - Page web avec OpenLayers: openlayer_alwaysdata.md
-  - Page web avec OpenLayers "ajout de points": openlayer_alwaysdata_dessin.md
-  - Automatisation de cartes thématiques dans QGIS: Methodologie_carto_diag_auto.md
-  - ETL QGIS interactif: etl/index.html
-  - Mise en place de Lizmap: lizmap.md
-  - Automatisation de l'exécution d'un projet FME: automatisaion_fme.md
-  - Cartographie avec RStudio: rstudio_geomatique.md
+  - "GeoServer et diffusion de flux": GeoServer_QGIS_notes.md
+  - "Page web avec OpenLayers": openlayer_alwaysdata.md
+  - "Page web avec OpenLayers « ajout de points »": openlayer_alwaysdata_dessin.md
+  - "Automatisation de cartes thématiques dans QGIS": Methodologie_carto_diag_auto.md
+  - "ETL QGIS interactif": etl/index.html
+  - "Mise en place de Lizmap": lizmap.md
+  - "Automatisation de l'exécution d'un projet FME": automatisaion_fme.md
+  - "Cartographie avec RStudio": rstudio_geomatique.md
   # - Manipulation de données avec les commandes GDAL: GDAL_Ubuntu.md
-  - Télédétection et géomatique: teledetection.md
+  - "Télédétection et géomatique": teledetection.md
   # - Consultation dynamique de données PostgreSQL avec PHP: consultation_dynamique_script_php.md
-  - Classification non supervisée d'images: classification_image_kmeans.md
-  - Classification supervisée d'images: teledetection_cpgeom.md
+  - "Classification non supervisée d'images": classification_image_kmeans.md
+  - "Classification supervisée d'images": teledetection_cpgeom.md
   # - Initiation à Python 1: python1.md
-  # - Initiation à Python 2: python2.md
-  # - Initiation à Python 3: python3.md
-  # - Initiation à Python 4: python4.md
-  # - Initiation à Python 5: python5.md
-  # - Initiation à Python 6: python6.md
-  # - Initiation à Python 7: python7.md
-  # - Initiation à Python 8: python8.md
-  # - Initiation à Python 9: python9.md
-  # - Initiation à Python 10: python10.md
-  # - Initiation à Python 11: python11.md
-  # - Initiation à Python 12: python12.md
-  # - Initiation à Python 13: python13.md
-  # - Initiation à Python 14: python14.md
-  # - Initiation à Python 15: python15.md
-  - Interopérabilité des données en géomatique: Interoperabilite.md
+  # (garde ici tes autres lignes commentées "Initiation à Python 2 à 15")
+  - "Interopérabilité des données en géomatique": Interoperabilite.md
   - "Exemples de sources de données sur les entreprises": Readme.md
-  - Carte du Pays de Châlons-en-Champagne: carte_web.html
+  - "Carte du Pays de Châlons-en-Champagne": carte_web.html
 
 extra_css:
   - css/le_style.css
