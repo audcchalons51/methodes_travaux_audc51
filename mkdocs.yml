@@ -6,8 +6,8 @@ site_author: AUDC 51
 theme:
   name: readthedocs
   language: fr
-  favicon: images/logo_audc.png
-  logo: images/logo_audc.png
+  favicon: assets/images/logo_audc.png
+  logo: assets/images/logo_audc.png
 
 nav:
   - Accueil: index.md
