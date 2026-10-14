@@ -56,7 +56,12 @@
 
 
 /* =========================================================
-   THÈME ROSE ET BLANC AUDC 51 (forcé)
+   THÈME ROSE AUDC 51 (forcé)
+   Rose principal  : #c8187a (foncé : #a01262)
+   Rose 60 %       : #de74af  (barre latérale)
+   Rose clair      : #f0a3ce / #f7c9e0
+   Lignes          : #eea9d0
+   Texte du menu   : #3b0a27
    ========================================================= */
 
 /* ---- Bandeau du haut (titre + recherche) et barre mobile ---- */
@@ -74,59 +79,62 @@
   border-color: #a01262 !important;
 }
 
-/* ---- Barre latérale : fond blanc ---- */
+/* ---- Barre latérale : rose à 60 % ---- */
 .wy-nav-side,
 .wy-side-scroll,
 .wy-menu.wy-menu-vertical {
-  background: #ffffff !important;
-  background-color: #ffffff !important;
+  background: #de74af !important;
+  background-color: #de74af !important;
 }
 .wy-nav-side {
-  border-right: 1px solid #eeeeee !important;
+  border-right: none !important;
 }
 
-/* ---- Liens du menu (niveau 1) ---- */
+/* ---- Liens du menu (niveau 1) avec ligne fine de séparation ---- */
 .wy-menu-vertical a,
 .wy-menu-vertical li.toctree-l1 > a {
-  color: #333333 !important;
-  background: #ffffff !important;
+  color: #3b0a27 !important;
+  background: #de74af !important;
+  border-bottom: 1px solid #eea9d0 !important;
+  border-top: none !important;
 }
 .wy-menu-vertical a:hover,
 .wy-menu-vertical li.toctree-l1 > a:hover {
-  background: #fbe4f1 !important;
-  color: #c8187a !important;
+  background: #c8187a !important;
+  color: #ffffff !important;
 }
 
 /* ---- Section ouverte (niveau 1 courant) ---- */
 .wy-menu-vertical li.current,
 .wy-menu-vertical li.toctree-l1.current {
-  background: #fbe4f1 !important;
+  background: #f0a3ce !important;
 }
 .wy-menu-vertical li.toctree-l1.current > a {
-  background: #fbe4f1 !important;
-  color: #c8187a !important;
+  background: #c8187a !important;
+  color: #ffffff !important;
   font-weight: bold;
-  border-top: 1px solid #f0c4dd !important;
-  border-bottom: 1px solid #f0c4dd !important;
+  border-top: 1px solid #a01262 !important;
+  border-bottom: 1px solid #a01262 !important;
 }
 
-/* ---- Sous-niveaux (2, 3, 4) : remplace les gris du thème ---- */
+/* ---- Sous-niveaux (2, 3, 4) : rose plus clair ---- */
 .wy-menu-vertical li.toctree-l2 > a,
 .wy-menu-vertical li.toctree-l3 > a,
 .wy-menu-vertical li.toctree-l4 > a,
 .wy-menu-vertical li.current li.toctree-l2 > a,
 .wy-menu-vertical li.current li.toctree-l3 > a,
 .wy-menu-vertical li.current li.toctree-l4 > a {
-  background: #fdf0f7 !important;
-  color: #333333 !important;
-  border-right: 1px solid #f0c4dd !important;
+  background: #f0a3ce !important;
+  color: #3b0a27 !important;
+  border-right: none !important;
+  border-bottom: 1px solid #f7c9e0 !important;
 }
 .wy-menu-vertical li.toctree-l2 > a:hover,
 .wy-menu-vertical li.toctree-l3 > a:hover,
 .wy-menu-vertical li.toctree-l4 > a:hover,
 .wy-menu-vertical li.current li > a:hover {
-  background: #f6cfe5 !important;
-  color: #a01262 !important;
+  background: #c8187a !important;
+  color: #ffffff !important;
 }
 
 /* ---- Page active dans les sous-niveaux ---- */
@@ -141,7 +149,10 @@
 /* ---- Petits boutons +/- d'ouverture des sections ---- */
 .wy-menu-vertical li span.toctree-expand,
 .wy-menu-vertical li.current > a span.toctree-expand {
-  color: #c8187a !important;
+  color: #3b0a27 !important;
+}
+.wy-menu-vertical li.toctree-l1.current > a span.toctree-expand {
+  color: #ffffff !important;
 }
 
 /* ---- Barre Previous / Next en bas ---- */
