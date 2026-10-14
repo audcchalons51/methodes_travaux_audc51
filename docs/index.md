@@ -19,6 +19,11 @@
   👥 <a href="https://www.audc51.org/lagence/lequipe-technique/" target="_blank">Équipe</a>
 </p>
 
+<p align="center">
+  💡 <strong>Une remarque, une suggestion ?</strong>
+  <a href="mailto:a.guene@audc51.org?subject=Documentation%20AUDC%2051%20-%20Suggestion&body=Bonjour%20Abdou%2C%0A%0APage%20concern%C3%A9e%20%3A%20%0AMa%20remarque%20%3A%20%0A">Écrivez-moi</a>
+</p>
+
 ## Objectifs de la plateforme
 
 Site développé dans le cadre de l’amélioration continue des outils de l'agence.
