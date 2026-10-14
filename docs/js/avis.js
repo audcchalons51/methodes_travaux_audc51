@@ -20,7 +20,7 @@
   // --- Bouton + fenêtre ---
   var wrap = document.createElement('div');
   wrap.innerHTML =
-    '<button id="avis-open" type="button">💡 Une remarque ?</button>' +
+    '<button id="avis-open" type="button">💡 Une remarque ou suggestion ?</button>' +
     '<dialog id="avis-dialog"><form id="avis-form">' +
     '<h3>Donner votre avis</h3>' +
     '<input type="text" name="Page concernée" id="avis-page" placeholder="Page concernée">' +
