@@ -1,38 +1,39 @@
-/* 1) Pleine largeur du conteneur principal, sans limite arbitraire */
+/* =========================================================
+   MISE EN PAGE
+   ========================================================= */
+
+/* 1) Pleine largeur du conteneur principal */
 .wy-nav-content {
   max-width: none !important;
   width: 100% !important;
-  padding: 24px 32px !important;   /* un peu d’air */
+  padding: 24px 32px !important;
 }
 
-/* 2) RÉTABLIR la marge laissée pour la sidebar sur desktop */
-@media screen and (min-width: 1024px) {
+/* 2) Desktop : marge pour la barre latérale (le thème l'affiche dès 769px) */
+@media screen and (min-width: 769px) {
   .wy-nav-content-wrap {
-    margin-left: 300px !important;   /* largeur de la barre latérale */
+    margin-left: 300px !important;
   }
   .wy-nav-side {
-    width: 300px !important;         /* cohérent avec la marge ci-dessus */
+    width: 300px !important;
   }
 }
 
-/* 3) Sur mobile/tablette, on laisse le contenu prendre toute la largeur */
-@media screen and (max-width: 1023.98px) {
+/* 3) Mobile : le contenu prend toute la largeur */
+@media screen and (max-width: 768px) {
   .wy-nav-content-wrap {
     margin-left: 0 !important;
   }
 }
 
-/* 4) Contrainte de lisibilité du bloc de texte (au centre),
-      tout en laissant tableaux/images/code s’étaler si besoin */
-.rst-content > .section,
-.rst-content .document,
+/* 4) Largeur de lecture du texte, centré */
 .rst-content {
-  max-width: 1200px !important;      /* ajuste 1100–1400 selon ton écran */
+  max-width: 1200px !important;      /* ajuste entre 1100 et 1400 */
   margin-left: auto !important;
   margin-right: auto !important;
 }
 
-/* 5) Tables, images, code : utiliser la largeur disponible proprement */
+/* 5) Tableaux, images, code */
 .rst-content table.docutils {
   display: block;
   width: 100% !important;
@@ -41,7 +42,7 @@
 }
 .rst-content table.docutils th,
 .rst-content table.docutils td {
-  white-space: nowrap;               /* évite les retours moches */
+  white-space: nowrap;
 }
 
 .rst-content img {
@@ -49,13 +50,78 @@
   height: auto !important;
 }
 
-.rst-content pre,
-.rst-content code {
+.rst-content pre {
   max-width: 100% !important;
   overflow-x: auto;
 }
 
-/* 6) Évite les barres de défilement horizontales “fantômes” */
+/* 6) Évite les barres de défilement horizontales parasites */
 .wy-body-for-nav {
   overflow-x: hidden !important;
+}
+
+
+/* =========================================================
+   THÈME ROSE ET BLANC AUDC 51
+   ========================================================= */
+
+:root {
+  --rose: #c8187a;
+  --rose-fonce: #a01262;
+  --rose-clair: #fbe4f1;
+}
+
+/* Bandeau du haut (logo + recherche) et barre mobile */
+.wy-side-nav-search,
+.wy-nav-top {
+  background-color: var(--rose);
+}
+.wy-side-nav-search input[type=text] {
+  border-color: var(--rose-fonce);
+}
+
+/* Barre latérale blanche */
+.wy-nav-side {
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+}
+.wy-menu-vertical a {
+  color: #333333;
+}
+.wy-menu-vertical a:hover {
+  background-color: var(--rose-clair);
+  color: var(--rose);
+}
+
+/* Section ouverte et page active */
+.wy-menu-vertical li.current {
+  background: var(--rose-clair);
+}
+.wy-menu-vertical li.current a {
+  color: #333333;
+  border-right: 1px solid #f0c4dd;
+}
+.wy-menu-vertical li.current a:hover {
+  background: #f6cfe5;
+}
+.wy-menu-vertical li.toctree-l1.current > a {
+  background: #ffffff;
+  color: var(--rose);
+  border-top: 1px solid #f0c4dd;
+  border-bottom: 1px solid #f0c4dd;
+}
+
+/* Barre Previous / Next en bas */
+.rst-versions,
+.rst-versions .rst-current-version {
+  background: var(--rose);
+  color: #ffffff;
+}
+
+/* Liens dans les pages */
+a {
+  color: var(--rose);
+}
+a:hover {
+  color: var(--rose-fonce);
 }
