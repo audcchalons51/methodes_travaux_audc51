@@ -21,7 +21,7 @@ nav:
 
   - GeoServer et diffusion de flux: GeoServer_QGIS_notes.md
   - Page web avec OpenLayers: openlayer_alwaysdata.md
-  - "Page web avec OpenLayers : ajout de points": openlayer_alwaysdata_dessin.md
+  - Page web avec OpenLayers : ajout de points": openlayer_alwaysdata_dessin.md
   - Automatisation de cartes thématiques dans QGIS: Methodologie_carto_diag_auto.md
   - ETL QGIS interactif: etl/index.html
   - Mise en place de Lizmap: lizmap.md
