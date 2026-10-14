@@ -7,7 +7,7 @@
 </p>
 
 ---
-## Coordonnées
+# Coordonnées
 
 <p align="center">
   📍 <a href="https://www.google.com/maps/search/?api=1&query=26+rue+Joseph-Marie+Jacquard+51000+Ch%C3%A2lons-en-Champagne" target="_blank">26 rue Joseph-Marie Jacquard, 51000 Châlons-en-Champagne</a>
@@ -18,7 +18,7 @@
   📞 <strong>Téléphone :</strong> <a href="tel:+33326646098">03 26 64 60 98</a>
 </p> 
 
-## Objectifs de la plateforme
+# Objectifs de la plateforme
 
 Site développé dans le cadre de l’amélioration continue des outils de l'agence.
 Ce site rassemble l’ensemble des ressources, méthodes et bonnes pratiques utilisées pour la production, la gestion et l’analyse des données géomatiques intéressantes.  
@@ -30,7 +30,7 @@ Il a été conçu pour offrir un cadre clair, structuré et facilement accessibl
 - Faciliter le partage d’informations entre les différents projets.
 - Servir de guide aux nouveaux utilisateurs des outils SIG.
 
-## Sites de l'Agence:
+# Sites de l'Agence:
 
 [🔗 Site officiel de l'AUDC51](https://www.audc51.org/) 
 
