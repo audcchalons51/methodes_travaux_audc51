@@ -7,9 +7,16 @@
 </p>
 
 ---
-**AUDC51 :** Agence d'Urbanisme et de développement de l'agglomération et du Pays de Châlons en Champagne 
+## Coordonnées
 
-**Mail :** [audcchalons@gmail.com](mailto:audcchalons@gmail.com)
+<p align="center">
+  📍 <a href="https://www.google.com/maps/search/?api=1&query=26+rue+Joseph-Marie+Jacquard+51000+Ch%C3%A2lons-en-Champagne" target="_blank">26 rue Joseph-Marie Jacquard, 51000 Châlons-en-Champagne</a>
+  <br>
+  ✉️  <a href="mailto:audcchalons@gmail.com">audcchalons@gmail.com</a>
+</p>
+<p align="center">
+  📞 <strong>Téléphone :</strong> <a href="tel:+33326646098">03 26 64 60 98</a>
+</p> 
 
 ## Objectifs de la plateforme
 
