@@ -22,49 +22,6 @@
   👥 <a href="https://www.audc51.org/lagence/lequipe-technique/" target="_blank">Équipe</a>
 </p>
 
-<div align="center">
-<button id="avis-open" type="button" style="padding: 8px 18px; background-color: #c8187a; color: #ffffff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">💡 Une remarque, une suggestion ?</button>
-<dialog id="avis-dialog" style="border: 1px solid #c8187a; border-radius: 10px; padding: 20px; width: 90%; max-width: 480px; text-align: left;">
-<form id="avis-form">
-<h3 style="margin-top: 0; color: #c8187a;">Donner votre avis</h3>
-<input type="text" name="Page concernée" placeholder="Page concernée (facultatif)" style="width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 10px;">
-<textarea name="Remarque" required rows="6" placeholder="Votre remarque ou suggestion" style="width: 100%; box-sizing: border-box; padding: 8px; margin-bottom: 10px;"></textarea>
-<input type="hidden" name="_subject" value="Documentation AUDC 51 - Suggestion">
-<input type="hidden" name="_captcha" value="false">
-<input type="text" name="_honey" style="display: none;">
-<button type="submit" style="padding: 8px 18px; background-color: #c8187a; color: #ffffff; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">Envoyer</button>
-<button type="button" id="avis-close" style="padding: 8px 18px; margin-left: 6px; border: 1px solid #cccccc; border-radius: 6px; background: #ffffff; cursor: pointer;">Annuler</button>
-<p id="avis-status" style="margin-bottom: 0;"></p>
-</form>
-</dialog>
-</div>
-<script>
-(function () {
-  var d = document.getElementById('avis-dialog');
-  var s = document.getElementById('avis-status');
-  document.getElementById('avis-open').onclick = function () { s.textContent = ''; d.showModal(); };
-  document.getElementById('avis-close').onclick = function () { d.close(); };
-  document.getElementById('avis-form').onsubmit = function (e) {
-    e.preventDefault();
-    var form = e.target;
-    s.textContent = 'Envoi en cours...';
-    fetch('https://formsubmit.co/ajax/guenelahad@gmail.com', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    })
-    .then(function (r) { return r.json(); })
-    .then(function (data) {
-      if (data.success === 'true' || data.success === true) {
-        s.textContent = 'Merci, votre message a bien été envoyé !';
-        form.reset();
-      } else { throw new Error('echec'); }
-    })
-    .catch(function () { s.textContent = "Erreur d'envoi, veuillez réessayer."; });
-  };
-})();
-</script>
-
 ## Objectifs de la plateforme
 
 Site développé dans le cadre de l’amélioration continue des outils de l’agence.
