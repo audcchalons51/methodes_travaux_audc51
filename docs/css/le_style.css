@@ -54,14 +54,17 @@
   overflow-x: hidden !important;
 }
 
-
 /* =========================================================
-   THÈME ROSE AUDC 51 (forcé)
-   Rose principal  : #c8187a (foncé : #a01262)
-   Rose 85 %       : #d03b8e  (barre latérale)
-   Rose sous-menu  : #b01a74
-   Lignes          : #e583b6
+   THÈME ROSE AUDC 51 (forcé) - barre latérale transparente
+   Rose d'origine de la barre : #d03b8e (rgb 208 59 142)
+   Opacité de la barre : réglable ci-dessous (--rose-barre-opacite)
+   Rose principal (bandeau, boutons, liens) : #c8187a (foncé : #a01262)
+   Texte du menu : #5a1a40
    ========================================================= */
+
+:root {
+  --rose-barre-opacite: 0.2;   /* 0.2 = 20 %   |   0.1 = 10 % */
+}
 
 /* ---- Bandeau du haut (titre + recherche) et barre mobile ---- */
 .wy-side-nav-search,
@@ -78,42 +81,41 @@
   border-color: #a01262 !important;
 }
 
-/* ---- Barre latérale : rose à 85 % ---- */
-.wy-nav-side,
-.wy-side-scroll,
-.wy-menu.wy-menu-vertical {
-  background: #d03b8e !important;
-  background-color: #d03b8e !important;
-}
+/* ---- Barre latérale : rose #d03b8e transparent (couleur posée UNE seule fois) ---- */
 .wy-nav-side {
+  background: rgb(208 59 142 / var(--rose-barre-opacite)) !important;
   border-right: none !important;
 }
+.wy-side-scroll,
+.wy-menu.wy-menu-vertical,
+.wy-menu-vertical ul,
+.wy-menu-vertical li,
+.wy-menu-vertical li.current,
+.wy-menu-vertical li.toctree-l1.current {
+  background: transparent !important;
+}
 
-/* ---- Liens du menu (niveau 1) avec ligne fine de séparation ---- */
+/* ---- Liens du menu (niveau 1) ---- */
 .wy-menu-vertical a,
 .wy-menu-vertical li.toctree-l1 > a {
-  color: #ffffff !important;
-  background: #d03b8e !important;
-  border-bottom: 1px solid #e583b6 !important;
+  color: #5a1a40 !important;
+  background: transparent !important;
+  border-bottom: 1px solid rgb(208 59 142 / 0.35) !important;
   border-top: none !important;
 }
 .wy-menu-vertical a:hover,
 .wy-menu-vertical li.toctree-l1 > a:hover {
-  background: #a01262 !important;
-  color: #ffffff !important;
+  background: rgb(208 59 142 / 0.18) !important;
+  color: #3d0f2b !important;
 }
 
 /* ---- Section ouverte (niveau 1 courant) ---- */
-.wy-menu-vertical li.current,
-.wy-menu-vertical li.toctree-l1.current {
-  background: #b01a74 !important;
-}
 .wy-menu-vertical li.toctree-l1.current > a {
-  background: #a01262 !important;
-  color: #ffffff !important;
+  background: rgb(208 59 142 / 0.25) !important;
+  color: #3d0f2b !important;
   font-weight: bold;
-  border-top: 1px solid #e583b6 !important;
-  border-bottom: 1px solid #e583b6 !important;
+  border-top: 1px solid rgb(208 59 142 / 0.35) !important;
+  border-bottom: 1px solid rgb(208 59 142 / 0.35) !important;
 }
 
 /* ---- Sous-niveaux (2, 3, 4) ---- */
@@ -123,17 +125,17 @@
 .wy-menu-vertical li.current li.toctree-l2 > a,
 .wy-menu-vertical li.current li.toctree-l3 > a,
 .wy-menu-vertical li.current li.toctree-l4 > a {
-  background: #b01a74 !important;
-  color: #ffffff !important;
+  background: rgb(208 59 142 / 0.1) !important;
+  color: #5a1a40 !important;
   border-right: none !important;
-  border-bottom: 1px solid #c9529b !important;
+  border-bottom: 1px solid rgb(208 59 142 / 0.25) !important;
 }
 .wy-menu-vertical li.toctree-l2 > a:hover,
 .wy-menu-vertical li.toctree-l3 > a:hover,
 .wy-menu-vertical li.toctree-l4 > a:hover,
 .wy-menu-vertical li.current li > a:hover {
-  background: #8a0f54 !important;
-  color: #ffffff !important;
+  background: rgb(208 59 142 / 0.22) !important;
+  color: #3d0f2b !important;
 }
 
 /* ---- Page active dans les sous-niveaux ---- */
@@ -141,14 +143,14 @@
 .wy-menu-vertical li.toctree-l2.current > a,
 .wy-menu-vertical li.toctree-l3.current > a {
   background: #ffffff !important;
-  color: #c8187a !important;
+  color: #a01262 !important;
   font-weight: bold;
 }
 
 /* ---- Petits boutons +/- d'ouverture des sections ---- */
 .wy-menu-vertical li span.toctree-expand,
 .wy-menu-vertical li.current > a span.toctree-expand {
-  color: #ffffff !important;
+  color: #5a1a40 !important;
 }
 
 /* ---- Barre Previous / Next en bas ---- */
