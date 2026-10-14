@@ -10,13 +10,12 @@
 ## Coordonnées
 
 <p align="center">
-  📍 <a href="https://www.google.com/maps/search/?api=1&query=26+rue+Joseph-Marie+Jacquard+51000+Ch%C3%A2lons-en-Champagne" target="_blank">26 rue Joseph-Marie Jacquard, 51000 Châlons-en-Champagne</a>
+  📍 <strong>Adresse :</strong> <a href="https://www.google.com/maps/search/?api=1&query=26+rue+Joseph-Marie+Jacquard+51000+Ch%C3%A2lons-en-Champagne" target="_blank">26 rue Joseph-Marie Jacquard, 51000 Châlons-en-Champagne</a>
   <br>
-  ✉️  <a href="mailto:audcchalons@gmail.com">audcchalons@gmail.com</a>
-</p>
-<p align="center">
+  ✉️ <strong>Mail :</strong> <a href="mailto:audcchalons@gmail.com">audcchalons@gmail.com</a>
+  <br>
   📞 <strong>Téléphone :</strong> <a href="tel:+33326646098">03 26 64 60 98</a>
-</p> 
+</p>
 
 ## Objectifs de la plateforme
 
