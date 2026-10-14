@@ -14,7 +14,9 @@
   <br>
   ✉️ <strong>Mail :</strong> <a href="mailto:audcchalons@gmail.com">audcchalons@gmail.com</a>
   <br>
-  📞 <strong>Téléphone :</strong> <a href="tel:+33326646098">03 26 64 60 98</a>
+  💬 <a href="https://www.audc51.org/contact/" target="_blank">Nous contacter</a>
+  <br>
+  👥 <a href="https://www.audc51.org/lagence/lequipe-technique/" target="_blank">Équipe</a>
 </p>
 
 ## Objectifs de la plateforme
