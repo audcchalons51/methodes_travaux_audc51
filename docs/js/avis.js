@@ -16,7 +16,7 @@
     '#avis-dialog .avis-btn{padding:8px 18px;border:none;border-radius:6px;font-weight:bold;cursor:pointer;}' +
     '#avis-status{margin:10px 0 0;}';
   document.head.appendChild(css);
-
+ 
   // --- Bouton + fenêtre ---
   var wrap = document.createElement('div');
   wrap.innerHTML =
