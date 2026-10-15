@@ -54,17 +54,15 @@
   overflow-x: hidden !important;
 }
 
-/* =========================================================
-   THÈME ROSE AUDC 51 (forcé) - barre latérale transparente
-   Rose d'origine de la barre : #d03b8e (rgb 208 59 142)
-   Opacité de la barre : réglable ci-dessous (--rose-barre-opacite)
-   Rose principal (bandeau, boutons, liens) : #c8187a (foncé : #a01262)
-   Texte du menu : #5a1a40
-   ========================================================= */
 
-:root {
-  --rose-barre-opacite: 0.2;   /* 0.2 = 20 %   |   0.1 = 10 % */
-}
+/* =========================================================
+   THÈME ROSE AUDC 51 (forcé)
+   Rose principal   : #c8187a (foncé : #a01262)
+   Rose 85 %        : #d03b8e  (sections du menu)
+   Rose très foncé  : #7a0d4a  (section ouverte, bandes)
+   Rose très pâle   : #fdeef6  (sous-titres)
+   Lignes           : #e583b6 (sections) / #f1c3dc (sous-titres)
+   ========================================================= */
 
 /* ---- Bandeau du haut (titre + recherche) et barre mobile ---- */
 .wy-side-nav-search,
@@ -81,76 +79,102 @@
   border-color: #a01262 !important;
 }
 
-/* ---- Barre latérale : rose #d03b8e transparent (couleur posée UNE seule fois) ---- */
+/* ---- Barre latérale ---- */
+.wy-nav-side,
+.wy-side-scroll,
+.wy-menu.wy-menu-vertical {
+  background: #d03b8e !important;
+  background-color: #d03b8e !important;
+}
 .wy-nav-side {
-  background: rgb(208 59 142 / var(--rose-barre-opacite)) !important;
   border-right: none !important;
 }
-.wy-side-scroll,
-.wy-menu.wy-menu-vertical,
-.wy-menu-vertical ul,
-.wy-menu-vertical li,
-.wy-menu-vertical li.current,
-.wy-menu-vertical li.toctree-l1.current {
-  background: transparent !important;
-}
 
-/* ---- Liens du menu (niveau 1) ---- */
-.wy-menu-vertical a,
+/* ---- SECTIONS (niveau 1) : rose soutenu, texte blanc ---- */
 .wy-menu-vertical li.toctree-l1 > a {
-  color: #5a1a40 !important;
-  background: transparent !important;
-  border-bottom: 1px solid rgb(208 59 142 / 0.35) !important;
+  color: #ffffff !important;
+  background: #d03b8e !important;
+  border-bottom: 1px solid #e583b6 !important;
   border-top: none !important;
+  font-weight: normal;
 }
-.wy-menu-vertical a:hover,
 .wy-menu-vertical li.toctree-l1 > a:hover {
-  background: rgb(208 59 142 / 0.18) !important;
-  color: #3d0f2b !important;
+  background: #a01262 !important;
+  color: #ffffff !important;
 }
 
-/* ---- Section ouverte (niveau 1 courant) ---- */
-.wy-menu-vertical li.toctree-l1.current > a {
-  background: rgb(208 59 142 / 0.25) !important;
-  color: #3d0f2b !important;
+/* ---- SECTION OUVERTE : rose très foncé, texte blanc gras ---- */
+.wy-menu-vertical li.toctree-l1.current {
+  background: #7a0d4a !important;
+}
+.wy-menu-vertical li.toctree-l1.current > a,
+.wy-menu-vertical li.toctree-l1.current > a.current {
+  background: #7a0d4a !important;
+  color: #ffffff !important;
   font-weight: bold;
-  border-top: 1px solid rgb(208 59 142 / 0.35) !important;
-  border-bottom: 1px solid rgb(208 59 142 / 0.35) !important;
+  border-top: none !important;
+  border-bottom: 2px solid #ffffff !important;
 }
 
-/* ---- Sous-niveaux (2, 3, 4) ---- */
+/* ---- BLOC DES SOUS-TITRES : fond très pâle, bande foncée ---- */
+.wy-menu-vertical li.toctree-l1.current > ul {
+  background: #fdeef6 !important;
+  border-left: 6px solid #7a0d4a !important;
+  border-bottom: 4px solid #7a0d4a !important;
+}
+
+/* ---- Sous-titres (niveaux 2, 3, 4) : texte foncé, plus petit, décalé ---- */
 .wy-menu-vertical li.toctree-l2 > a,
 .wy-menu-vertical li.toctree-l3 > a,
 .wy-menu-vertical li.toctree-l4 > a,
 .wy-menu-vertical li.current li.toctree-l2 > a,
 .wy-menu-vertical li.current li.toctree-l3 > a,
 .wy-menu-vertical li.current li.toctree-l4 > a {
-  background: rgb(208 59 142 / 0.1) !important;
-  color: #5a1a40 !important;
+  background: #fdeef6 !important;
+  color: #4a0a2f !important;
+  font-size: 0.9em;
+  font-weight: normal;
   border-right: none !important;
-  border-bottom: 1px solid rgb(208 59 142 / 0.25) !important;
+  border-bottom: 1px solid #f1c3dc !important;
+  padding-right: 1em !important;
+}
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.current li.toctree-l2 > a {
+  padding-left: 2.2em !important;
+}
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.current li.toctree-l3 > a {
+  padding-left: 3.2em !important;
+}
+.wy-menu-vertical li.toctree-l4 > a,
+.wy-menu-vertical li.current li.toctree-l4 > a {
+  padding-left: 4.2em !important;
 }
 .wy-menu-vertical li.toctree-l2 > a:hover,
 .wy-menu-vertical li.toctree-l3 > a:hover,
 .wy-menu-vertical li.toctree-l4 > a:hover,
 .wy-menu-vertical li.current li > a:hover {
-  background: rgb(208 59 142 / 0.22) !important;
-  color: #3d0f2b !important;
+  background: #f7c9e0 !important;
+  color: #7a0d4a !important;
 }
 
-/* ---- Page active dans les sous-niveaux ---- */
-.wy-menu-vertical li.current > a.current,
+/* ---- Sous-titre actif : bien visible ---- */
 .wy-menu-vertical li.toctree-l2.current > a,
-.wy-menu-vertical li.toctree-l3.current > a {
-  background: #ffffff !important;
-  color: #a01262 !important;
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l4.current > a {
+  background: #c8187a !important;
+  color: #ffffff !important;
   font-weight: bold;
 }
 
 /* ---- Petits boutons +/- d'ouverture des sections ---- */
-.wy-menu-vertical li span.toctree-expand,
-.wy-menu-vertical li.current > a span.toctree-expand {
-  color: #5a1a40 !important;
+.wy-menu-vertical li span.toctree-expand {
+  color: #ffffff !important;
+}
+.wy-menu-vertical li.toctree-l2 span.toctree-expand,
+.wy-menu-vertical li.toctree-l3 span.toctree-expand,
+.wy-menu-vertical li.toctree-l4 span.toctree-expand {
+  color: #7a0d4a !important;
 }
 
 /* ---- Barre Previous / Next en bas ---- */
