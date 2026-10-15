@@ -284,7 +284,7 @@ WHERE srid = Find_SRID('carthage', 'cours', 'geom');
 
 ---
 
-### 19. Inventaire des couches de la base *(nouveau)*
+### 4. Inventaire des couches de la base *(nouveau)*
 
 #### Objectif
 
@@ -334,7 +334,7 @@ WHERE ST_SRID(geom) <> Find_SRID('village', 'parcel', 'geom');
 
 ---
 
-### 20. Validité des géométries *(nouveau)*
+### 5. Validité des géométries *(nouveau)*
 
 #### Objectif
 
@@ -372,7 +372,7 @@ WHERE NOT ST_IsValid(geom);
 
 ## B. Mesurer
 
-### 4. Longueur du réseau d'eaux usées
+### 1. Longueur du réseau d'eaux usées
 
 #### Objectif
 
@@ -404,7 +404,7 @@ FROM village.o_usees;
 
 ---
 
-### 5. Périmètre des zones PLU « ND »
+### 2. Périmètre des zones PLU « ND »
 
 #### Objectif
 
@@ -440,7 +440,7 @@ Ordre de grandeur : un carré de 100 m de côté a un périmètre de 400 m (0,4 
 
 ## C. Sélectionner par relation spatiale
 
-### 6. Parcelles traversées par le réseau d'eaux usées
+### 1. Parcelles traversées par le réseau d'eaux usées
 
 #### Objectif
 
@@ -479,7 +479,7 @@ ORDER BY longueur_reseau_m DESC;
 
 ---
 
-### 7. Parcelles bâties
+### 2. Parcelles bâties
 
 #### Objectif
 
@@ -518,7 +518,7 @@ WHERE NOT EXISTS (
 
 ---
 
-### 8. Départements traversés par la Garonne
+### 3. Départements traversés par la Garonne
 
 #### Objectif
 
@@ -550,7 +550,7 @@ ORDER BY d.code_insee;
 
 ---
 
-### 9. Parcelles voisines d'une parcelle donnée
+### 4. Parcelles voisines d'une parcelle donnée
 
 #### Objectif
 
@@ -593,7 +593,7 @@ JOIN req ON ST_DWithin(p2.geom, req.geom, 0.05)     -- 5 cm de tolérance
 
 ---
 
-### 10. Zones d'occupation du sol au contact des tourbières (code 412)
+### 5. Zones d'occupation du sol au contact des tourbières (code 412)
 
 #### Objectif
 
@@ -649,7 +649,7 @@ ORDER BY nb_zones DESC;
 
 ## D. Distances et proximité
 
-### 11. Distance des zones industrielles (121) à la Garonne
+### 1. Distance des zones industrielles (121) à la Garonne
 
 #### Objectif
 
@@ -696,7 +696,7 @@ Une distance de `0.00` signifie que la zone **touche ou chevauche** le cours d'e
 
 ---
 
-### 12. Bâtiment le plus proche du réseau d'eaux usées
+### 2. Bâtiment le plus proche du réseau d'eaux usées
 
 #### Objectif
 
@@ -752,7 +752,7 @@ WHERE d.distance_m > 100;
 
 ---
 
-### 21. Tampons autour d'objets *(nouveau)*
+### 3. Tampons autour d'objets *(nouveau)*
 
 #### Objectif
 
@@ -786,7 +786,7 @@ FROM village.o_usees;
 
 ## E. Fabriquer de nouvelles géométries
 
-### 13. Pourcentage de périmètre non touché par d'autres départements
+### 1. Pourcentage de périmètre non touché par d'autres départements
 
 #### Objectif
 
@@ -874,7 +874,7 @@ ORDER BY pct_non_touching DESC;
 
 ---
 
-### 14. Découper la Garonne par département
+### 2. Découper la Garonne par département
 
 #### Objectif
 
@@ -921,7 +921,7 @@ ORDER BY longueur_km DESC;
 
 ---
 
-### 15. Découper la Garonne en segments de 10 km
+### 3. Découper la Garonne en segments de 10 km
 
 #### Objectif
 
@@ -1007,7 +1007,7 @@ Tous les segments font 10 km, **sauf le dernier de chaque partie**, plus court :
 
 ---
 
-### 22. Fusionner des entités (dissolve) *(nouveau)*
+### 4. Fusionner des entités (dissolve) *(nouveau)*
 
 #### Objectif
 
@@ -1031,7 +1031,7 @@ ORDER BY surface_ha DESC;
 
 ---
 
-### 24. Centroïde ou point garanti dans le polygone *(nouveau)*
+### 5. Centroïde ou point garanti dans le polygone *(nouveau)*
 
 #### Objectif
 
@@ -1057,7 +1057,7 @@ FROM village.parcel;
 
 ## F. Compter et agréger
 
-### 16. Comptages avancés (mobilier par parcelle / type)
+### 1. Comptages avancés (mobilier par parcelle / type)
 
 #### Objectif
 
@@ -1151,7 +1151,7 @@ ORDER BY niveau, id_parcelle, id_type_mobilier;
 
 ---
 
-### 23. Compter les bâtiments par parcelle *(nouveau)*
+### 2. Compter les bâtiments par parcelle *(nouveau)*
 
 #### Objectif
 
@@ -1180,7 +1180,7 @@ ORDER BY nb_batiments DESC;
 
 ## G. Automatiser
 
-### 17. Triggers : ajout automatique de la date de création
+### 1. Triggers : ajout automatique de la date de création
 
 #### Objectif
 
@@ -1285,7 +1285,7 @@ DROP TABLE   IF EXISTS public.test_mobilier;
 
 ---
 
-### 18. Fonctions temporelles (PostgreSQL)
+### 2. Fonctions temporelles (PostgreSQL)
 
 #### Objectif
 
@@ -1348,7 +1348,7 @@ SELECT generate_series('2025-01-01'::date, '2025-12-01'::date, INTERVAL '1 month
 
 ## H. Diffuser et optimiser
 
-### 25. Publier une couche propre pour QGIS *(nouveau)*
+### 1. Publier une couche propre pour QGIS *(nouveau)*
 
 #### Objectif
 
@@ -1387,7 +1387,7 @@ COMMENT ON VIEW village.v_parcelles_traversees
 
 ---
 
-### 26. Lire un plan d'exécution *(nouveau)*
+### 2. Lire un plan d'exécution *(nouveau)*
 
 #### Objectif
 
