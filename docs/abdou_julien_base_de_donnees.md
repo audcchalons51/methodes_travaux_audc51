@@ -58,7 +58,7 @@ Chaque fiche suit le même plan, pour qu'on retrouve toujours l'information au m
 
 ## 0.1 La démarche en 7 étapes
 
-![Démarche type d'une requête spatiale](img/01_demarche_requete.png)
+<img width="1987" height="878" alt="01_demarche_requete" src="https://github.com/user-attachments/assets/8b848329-f098-4ba7-a1cc-cbac9f5ea858" />
 
 1. **Question** : formuler ce qu'on veut mesurer ou sélectionner, avec l'unité attendue (m, km, ha, nombre).
 2. **Couches** : identifier schéma, table et colonne géométrique.
@@ -70,7 +70,7 @@ Chaque fiche suit le même plan, pour qu'on retrouve toujours l'information au m
 
 ## 0.2 SRID et unités : la source d'erreurs n°1
 
-![SRID et unités](img/04_srid_unites.png)
+<img width="1987" height="908" alt="04_srid_unites" src="https://github.com/user-attachments/assets/730d9101-5540-437e-8331-8c94a3d37aec" />
 
 `ST_Length`, `ST_Area`, `ST_Perimeter`, `ST_Distance`, `ST_DWithin`, `ST_Simplify` et `ST_Buffer` **travaillent dans l'unité du SRID** de la géométrie.
 
@@ -90,7 +90,7 @@ ST_Transform(c.geom, Find_SRID('corine', 'clc', 'geom'))
 
 ## 0.3 Comment PostGIS accélère les requêtes : l'index GIST
 
-![Index GIST en deux étapes](img/02_index_gist_deux_etapes.png)
+<img width="1841" height="920" alt="02_index_gist_deux_etapes" src="https://github.com/user-attachments/assets/c4b01cf3-8bea-47e5-9a8e-edd431ec6ea7" />
 
 PostGIS procède en **deux temps** :
 
@@ -108,9 +108,9 @@ VACUUM ANALYZE village.parcel;   -- met à jour les statistiques du planificateu
 
 ## 0.4 Quel prédicat ou quelle fonction choisir ?
 
-![Arbre de décision des fonctions](img/12_arbre_decision_fonctions.png)
+<img width="2062" height="1118" alt="12_arbre_decision_fonctions" src="https://github.com/user-attachments/assets/69252f49-24b6-4d26-8ff5-44aa31c49fd0" />
 
-![Prédicats spatiaux](img/03_predicats_spatiaux.png)
+<img width="1836" height="1258" alt="03_predicats_spatiaux" src="https://github.com/user-attachments/assets/597b2b74-4cb7-4f45-8b50-4ca7dbf138cd" />
 
 | Question posée | Fonction | Remarque |
 |---|---|---|
@@ -199,7 +199,7 @@ Fournir à QGIS une couche des cours d'eau **allégée** pour accélérer l'affi
 - Une **vue matérialisée** stocke physiquement le résultat : lecture rapide, mais à **rafraîchir** quand la source change.
 - L'index spatial doit être créé **sur la vue matérialisée** (et non sur la table source, erreur de l'ancienne version).
 
-![Effet de la tolérance de ST_Simplify](img/05_simplify_tolerance.png)
+<img width="1702" height="1319" alt="05_simplify_tolerance" src="https://github.com/user-attachments/assets/96292f6e-34d6-4635-8065-326e63d20f21" />
 
 ### Prérequis
 Vérifier le SRID (fiche 3). Si la couche est en 4326, **ne pas** utiliser une tolérance de 20.
@@ -627,7 +627,7 @@ Calculer, pour chaque zone industrielle Corine (code 121) située à **moins de 
 - La Garonne est composée de **plusieurs tronçons** : sans agrégation, une même zone apparaît une fois par tronçon. On garde la **distance minimale** avec `MIN()`.
 - Les deux couches n'ont généralement pas le même SRID : on reprojette la Garonne (petite couche) dans le SRID de Corine.
 
-![ST_DWithin : rayon de 10 km](img/07_dwithin_rayon.png)
+<img width="1912" height="998" alt="07_dwithin_rayon" src="https://github.com/user-attachments/assets/0a56815e-3805-4e90-8e85-8759d0daafe7" />
 
 ### Code SQL
 
@@ -670,7 +670,7 @@ Pour chaque bâtiment, trouver le tronçon de réseau le plus proche et la dista
 - `ORDER BY b.geom <-> o.geom LIMIT 1` utilise l'**index GIST** pour trouver directement le voisin le plus proche (recherche *KNN*), sans calculer la distance à tous les tronçons.
 - `ST_ShortestLine` permet de dessiner le branchement dans QGIS.
 
-![Plus proche voisin avec LATERAL](img/06_plus_proche_voisin.png)
+<img width="1912" height="998" alt="06_plus_proche_voisin" src="https://github.com/user-attachments/assets/c91f8f64-6524-4781-b55b-1658bc367365" />
 
 ### Prérequis
 Index GIST sur `village.o_usees.geom` (voir 0.3).
@@ -756,7 +756,7 @@ Pour chaque département, calculer :
 
 Cette analyse permet de repérer les départements **enclavés** (pourcentage proche de 0), **côtiers**, ou en **limite internationale**.
 
-![Frontière partagée et périmètre non touché](img/08_frontiere_partagee.png)
+<img width="1987" height="1028" alt="08_frontiere_partagee" src="https://github.com/user-attachments/assets/9f6ef5d9-9ba1-45e2-9b0d-28ade35d2641" />
 
 ### Principe étape par étape
 
@@ -885,7 +885,7 @@ Découper la Garonne en segments réguliers de 10 km, pour les styliser séparé
 4. Générer la série `0 … CEIL(longueur / 10 000) − 1` avec `generate_series`.
 5. Pour chaque indice, extraire la portion de ligne avec `ST_LineSubstring`, dont les bornes sont des **fractions** (0 à 1) de la longueur totale.
 
-![Découpage en segments réguliers](img/09_segments_10km.png)
+<img width="1987" height="878" alt="09_segments_10km" src="https://github.com/user-attachments/assets/eb00c332-193f-4694-a712-079323221d2f" />
 
 Le pas (10 000 m) est isolé dans une CTE `params` : on le modifie en un seul endroit.
 
@@ -1022,7 +1022,7 @@ Les CTE organisent le calcul en blocs lisibles :
 | `req2` | total par couple (type, parcelle) |
 | `total` | total général |
 
-![Pipeline de CTE](img/10_pipeline_cte.png)
+<img width="1987" height="938" alt="10_pipeline_cte" src="https://github.com/user-attachments/assets/bef6b836-d04d-464e-835a-be97118ebde7" />
 
 ### Version 1 : CTE (pédagogique)
 
@@ -1129,7 +1129,7 @@ Renseigner automatiquement `date_creation` à chaque insertion dans `test_mobili
 ### Principe
 Un trigger **`BEFORE INSERT`** déclenche une fonction qui modifie la ligne `NEW` **avant** son écriture.
 
-![Cycle d'un trigger BEFORE INSERT](img/11_trigger_before_insert.png)
+<img width="1987" height="757" alt="11_trigger_before_insert" src="https://github.com/user-attachments/assets/0e0799a1-adbc-46be-9142-ccbe0e615ad4" />
 
 > 💡 Si l'on veut seulement une date par défaut, `DEFAULT now()` sur la colonne suffit et c'est plus simple. Le trigger est utile quand on veut **imposer** la valeur (même si l'utilisateur en fournit une) ou enchaîner d'autres traitements.
 
