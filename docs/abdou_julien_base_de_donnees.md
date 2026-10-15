@@ -1,4 +1,4 @@
-# Scripts SQL / PostGIS fréquents en géomatique
+# Scripts SQL / PostGIS fréquents en géomatique 
 
 > **Public** : équipe géomatique / urbanisme (AUDC 51) · **SGBD** : PostgreSQL + PostGIS · **Clients** : pgAdmin, DBeaver, QGIS (DB Manager)
 > **Objet** : bibliothèque de requêtes **commentées, testées dans leur logique et corrigées**, avec pour chacune l'objectif, le principe, les pièges et une illustration.
