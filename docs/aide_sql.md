@@ -32,7 +32,7 @@ Elle a été **réorganisée** pour suivre un fil logique : comprendre les notio
 
 ### Ma démarche pour écrire une requête spatiale
 
-![Démarche en six étapes : comprendre, contrôler, écrire, optimiser, vérifier, documenter](assets/images/sql_demarche.svg)
+<img width="1920" height="660" alt="sql_demarche" src="https://github.com/user-attachments/assets/1f9ac1a9-e4ea-4905-830e-8b4bf1233a5a" />
 
 *Les six étapes à suivre pour une requête fiable. Les sections 3, 15 et 21 détaillent chacune d'elles.*
 
@@ -144,7 +144,7 @@ Une règle simple permet de s'y retrouver :
 
 ### 2.1 Relations spatiales (vrai / faux)
 
-![Six schémas : intersects, contains, within, touches, disjoint, dwithin](assets/images/sql_relations_spatiales.svg)
+<img width="1920" height="1380" alt="sql_relations_spatiales" src="https://github.com/user-attachments/assets/cbcbd5fc-e812-4d2c-a0bf-94d701ac600a" />
 
 *Les relations spatiales renvoient VRAI ou FAUX. A est en rose, B en bleu.*
 
@@ -161,7 +161,7 @@ Une règle simple permet de s'y retrouver :
 
 ### 2.2 Géotraitements (nouvelle géométrie)
 
-![Quatre schémas : buffer, intersection, différence et union](assets/images/sql_geotraitements.svg)
+<img width="1920" height="1344" alt="sql_geotraitements" src="https://github.com/user-attachments/assets/63d93bde-d364-43a8-bb44-bb11de43ea40" />
 
 *Les géotraitements renvoient une nouvelle géométrie.*
 
@@ -984,7 +984,7 @@ SELECT pg_size_pretty(pg_database_size(current_database())) AS taille_base;
 ---
 ## 16. Droits, rôles et groupes
 
-![Schéma : des utilisateurs membres de groupes, qui reçoivent des privilèges sur les tables d'un schéma](assets/images/sql_roles_droits.svg)
+<img width="1920" height="1120" alt="sql_roles_droits" src="https://github.com/user-attachments/assets/313a22b1-0d39-4c7a-8257-676ec862472f" />
 
 *Les droits sont donnés aux groupes, et les utilisateurs rejoignent les groupes dont ils ont besoin.*
 
@@ -1232,7 +1232,7 @@ host    mabase  lea          10.0.0.15/32       scram-sha-256
 
 ## 17. Sauvegarder et restaurer une base PostgreSQL
 
-![Circuit de sauvegarde : base, pg_dump, fichier, psql ou pg_restore, base restaurée](assets/images/sql_sauvegarde.svg)
+<img width="1920" height="800" alt="sql_sauvegarde" src="https://github.com/user-attachments/assets/31ace920-c1ad-48a9-88f9-2f63670caa23" />
 
 *Le circuit complet : on sauvegarde, on conserve plusieurs copies, et on teste régulièrement la restauration.*
 
