@@ -1,4 +1,4 @@
-# 🗄️ Fiche complète PostgreSQL / PostGIS
+# 🗄️ Fiche complète PostgreSQL / PostGIS 
 
 > Aide-mémoire de l'AUDC 51 pour interroger, modifier, sécuriser et sauvegarder une base de données géographique.
 > Chaque requête est expliquée, avec ses pièges, ses variantes et, quand c'est utile, une illustration.
