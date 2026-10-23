@@ -188,3 +188,57 @@ Déroulé que le géomaticien appliquera au quotidien, une fois la plateforme en
 - mise à jour des données en temps réel via PostGIS ;
 - valorisation du travail géomatique ;
 - autonomie interne après transfert de compétences.
+
+## 7. Compte rendu de la réunion avec IDGEO - Lizmap
+
+**Réponses du prestataire (IDGEO), points à valider avec la DSI et suites à donner.**
+
+### Contexte
+
+- Avec ESRI, nous sommes dépendants : les coûts augmentent chaque année et les données sont sur un serveur externe.
+- Nous voulons être indépendants et garder nos données sur notre propre serveur.
+
+### Infrastructure et coûts
+
+- Installation de l'infrastructure : 5 000 à 10 000 € (ou 7 000 à 8 000 €).
+- Maintenance : 2 à 3 jours par an.
+- Une base de données propre à l'agence est vraiment idéale.
+- Un serveur mail permet aux utilisateurs de s'inscrire.
+
+### Fonctionnement de Lizmap
+
+- Lizmap fonctionne actuellement avec la version 3.44, appelée à évoluer.
+- Au démarrage, les couches QGIS peuvent être créées à la volée par SQL.
+
+### Accompagnement
+
+- IDGEO propose la maintenance, l'accompagnement et un support.
+- Un accompagnement est possible en attendant la montée en compétence en interne (Abdou, par exemple).
+- Pour estimer le coût avec une bonne fourchette, il nous faut un cahier des charges.
+
+### Alternative : offre d'hébergement standard de 3liz
+
+- Offre consultable sur https://www.lizmap.com/offres.html
+- Environ 200 € HT [préciser : par mois ou par an] : elle semble répondre à nos besoins, et Thomas (IDGEO) nous la conseille.
+- Les données transitent chez eux, mais 3liz garantit la sécurité.
+
+### Points à valider avec la DSI de Châlons Agglo
+
+- Le serveur de l'agence est mis à disposition par la DSI. Aurons-nous la main dessus (accès administrateur) ? Quelles restrictions ?
+- Notre serveur actuel ne sert qu'au stockage de fichiers : il n'est donc pas suffisant. Peut-on obtenir une autre machine ?
+- Option : prendre un serveur dédié à l'agence via la DSI, pour environ 30 €/mois.
+- Si cela se complique avec la DSI : installation et hébergement via 3liz (qui héberge aussi), avec maintenance par IDGEO.
+
+### Suites à donner
+
+- Rédiger un cahier des charges pour obtenir un chiffrage fiable auprès d'IDGEO.
+- Interroger la DSI sur les droits d'administration, la mise à disposition d'une machine et le serveur dédié à 30 €/mois.
+- Étudier l'offre 3liz : serons-nous autonomes avec cette offre ? Quelles seront les restrictions ?
+- Comparer les scénarios (serveur DSI, serveur dédié, hébergement 3liz) sur le coût, l'autonomie et la sécurité.
+- Présenter le projet au directeur une fois ces éléments rassemblés.
+
+### Points à préciser avant diffusion
+
+- Période des 200 € HT de l'offre 3liz (mensuelle ou annuelle).
+- Fourchette exacte du coût d'installation de l'infrastructure.
+ 
