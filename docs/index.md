@@ -8,6 +8,10 @@
   <img width="587" height="320" alt="Capture d'écran 2026-10-13 095648" src="https://github.com/user-attachments/assets/6f565214-ca3c-46df-b05f-fba1fa537718" />
 </p>
 
+Bienvenue sur la plateforme de documentation géomatique de l’Agence d’urbanisme et de développement de Châlons-en-Champagne, AUDC51.
+
+Cette plateforme présente les méthodes, outils et travaux réalisés ou documentés autour de QGIS, PostgreSQL/PostGIS, Lizmap, OpenLayers, de l’automatisation cartographique et de la gestion des données géographiques.
+
 ---
 
 ## Tableau de bord des travaux de l'agence
