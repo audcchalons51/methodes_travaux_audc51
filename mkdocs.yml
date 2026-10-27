@@ -6,6 +6,7 @@ site_author: AUDC51
 theme:
   name: readthedocs
   language: fr
+  custom_dir: docs/overrides
 
 nav:
   - "Accueil": index.md
