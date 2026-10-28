@@ -48,6 +48,8 @@ Ce site rassemble l’ensemble des ressources, méthodes et bonnes pratiques uti
 
 [🔗 Tableau de bord des travaux cartographiques en lien avec la future base de données](https://audcchalons51.github.io/tableau-de-bord-etudes-carto-audc51/)
 
+[🔗 Charte cartographique AUDC 51](https://audcchalons51.github.io/charte-cartographie-audc/)
+
 [🔗 LinkedIn](https://www.linkedin.com/company/agence-d-urbanisme-de-ch%C3%A2lons-en-champagne-audc/posts/)
 
 *D’autres rubriques seront ajoutées progressivement : base de données, GDAL, télédétection, traitements Python, métadonnées, etc.*
