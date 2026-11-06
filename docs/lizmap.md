@@ -10,6 +10,8 @@
 
 [Documentation officielle de Lizmap](https://docs.lizmap.com/current/en/introduction.html ) 
 
+[3Liz - Geodatadays 2022](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html#/1) 
+
 [Filezilla](https://docs.3liz.org/tutorial/filezilla-fr/) 
 
 [Pour aller plus loin avec 3liz](https://www.3liz.com/) 
