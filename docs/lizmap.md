@@ -8,7 +8,7 @@
 
 - Les versions précises (QGIS, Lizmap, PHP) sont à faire valider par le prestataire au moment de l'installation, car elles évoluent régulièrement. Les durées indiquées sont des ordres de grandeur, à confirmer par un devis détaillé.
 
-[Documentation officielle de Lizmap](https://docs.lizmap.com/current/en/introduction.html ) 
+[Documentation officielle de Lizmap](https://docs.lizmap.com/current/en/introduction.html )  
 
 [3Liz - Geodatadays 2022](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html#/1) 
 
