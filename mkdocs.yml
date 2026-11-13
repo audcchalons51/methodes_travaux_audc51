@@ -12,6 +12,7 @@ nav:
   #- "Mise en place d'une base de données géographique": etude_cas_bdd.md
   - "Automatisation de cartes thématiques dans QGIS": Methodologie_carto_diag_auto.md
   - "Mise en place de Lizmap": lizmap.md
+  - Comment utiliser Lizmap ? : formation-lizmap.md
   - "Administration d'une base de données géographique": aide_sql.md
   - "Exemples de scripts SQL fréquents en géomatique": abdou_julien_base_de_donnees.md
   #- "PostGIS 3D": postgis_3d_notes.md
