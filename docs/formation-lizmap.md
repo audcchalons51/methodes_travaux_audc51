@@ -11,27 +11,6 @@ description: "Formation AUDC 51 : passer d'un projet QGIS à une carte web Lizma
 
 ---
 
-## Sommaire
-
-1. [À propos de ce guide](#1-à-propos-de-ce-guide)
-2. [Comprendre Lizmap en 5 minutes](#2-comprendre-lizmap-en-5-minutes)
-3. [La démarche en un coup d'œil](#3-la-démarche-en-un-coup-dœil)
-4. [Étape 0 : préparer son poste](#4-étape-0--préparer-son-poste)
-5. [Étape 1 : préparer le projet QGIS](#5-étape-1--préparer-le-projet-qgis)
-6. [Étape 2 : configurer avec le plugin Lizmap](#6-étape-2--configurer-avec-le-plugin-lizmap)
-7. [Étape 3 : enregistrer le projet](#7-étape-3--enregistrer-le-projet)
-8. [Étape 4 : transférer les fichiers avec FileZilla](#8-étape-4--transférer-les-fichiers-avec-filezilla)
-9. [Étape 5 : déclarer le dossier dans l'administration Lizmap](#9-étape-5--déclarer-le-dossier-dans-ladministration-lizmap)
-10. [Étape 6 : vérifier dans le navigateur](#10-étape-6--vérifier-dans-le-navigateur)
-11. [Mettre à jour une carte déjà publiée](#11-mettre-à-jour-une-carte-déjà-publiée)
-12. [Bonnes pratiques et conventions AUDC](#12-bonnes-pratiques-et-conventions-audc)
-13. [Dépannage](#13-dépannage)
-14. [Aide-mémoire](#14-aide-mémoire)
-15. [Ressources et crédits](#15-ressources-et-crédits)
-16. [Annexes](#16-annexes)
-
----
-
 ## 1. À propos de ce guide
 
 ### 1.1 Objectif
