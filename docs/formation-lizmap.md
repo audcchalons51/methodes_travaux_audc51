@@ -5,9 +5,13 @@ description: "Formation AUDC 51 : passer d'un projet QGIS à une carte web Lizma
 
 # Publier un projet QGIS sur Lizmap : guide pas à pas
 
-> **Public visé** : les agents de l'AUDC 51 qui utilisent déjà QGIS et qui vont publier leurs cartes sur le web.
-> **Durée de lecture** : 25 minutes. **Durée de la première publication** : 1 à 2 heures, puis 10 minutes pour chaque mise à jour.
-> **Prérequis** : savoir ajouter des couches dans QGIS, ouvrir une table attributaire et les propriétés d'une couche. Aucune compétence en programmation n'est nécessaire.
+- **Public visé** : les agents de l'AUDC 51 qui utilisent déjà QGIS et qui vont publier leurs cartes sur le web.
+
+- **Durée de lecture** : 25 minutes.
+  
+- **Durée de la première publication** : 1 à 2 heures, puis 10 minutes pour chaque mise à jour.
+
+- **Prérequis** : savoir ajouter des couches dans QGIS, ouvrir une table attributaire et les propriétés d'une couche. Aucune compétence en programmation n'est nécessaire.
 
 ---
 
